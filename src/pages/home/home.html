@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-navbar >
+    <ion-title>Make it Happen</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-fab top right >
+  <button ion-fab color="primary" >+</button>
+</ion-fab>
+
+<ion-content padding>
+  <ion-card>
+    <ion-item>
+      <ion-label>Today's To Do</ion-label>
+      <ion-select [(ngModel)]="toppings" multiple="true">
+        <ion-option>Grocerry</ion-option>
+        <ion-option>Pay Bills</ion-option>
+        <ion-option>Do Laundry</ion-option>
+        <ion-option>Buy Medicine</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Upcoming Events
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+
+        <ion-item tyle="background-color: red">
+          <h2>My Neighbor Totoro</h2>
+          <p>Hayao Miyazaki • Septemeber 1, 2018</p>
+          <button ion-button clear item-end (click)="eview()">View</button>
+        </ion-item>
+
+        <ion-item>
+          <h2>IT Jam</h2>
+          <p>Luxe Hotel • August 30, 2018</p>
+          <button ion-button clear item-end>View</button>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      What to do next ? 
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Get Passport</ion-label>
+          <button ion-button clear item-end>Add</button>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Get Ticket</ion-label>
+          <button ion-button clear item-end>Add</button>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Travel</ion-label>
+          <button ion-button clear item-end>Add</button>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Get Marry</ion-label>
+          <button ion-button clear item-end>Add</button>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Have Kids</ion-label>
+          <button ion-button clear item-end>Add</button>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Grow Old</ion-label>
+          <button ion-button clear item-end>Add</button>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

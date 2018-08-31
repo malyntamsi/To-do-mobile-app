@@ -1,0 +1,20 @@
+page-home {
+
+}
+
+ion-card.cards-list-demo ion-card-header {
+  color: map-get($colors, primary);
+}
+
+ion-fab {
+  .fab { display: inline-block !important}
+}
+
+.card, list-inset{
+	background:rgba(255,255,255,0.5);
+}
+
+.item .item-content
+{
+	background-color: transparent !important;
+}
